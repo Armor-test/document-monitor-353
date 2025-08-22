@@ -1,0 +1,40 @@
+# CODEOWNERS file for document-monitor-353
+# Global owners - will be requested for all PRs
+* @Armor-test/squad-apps @Armor-test/squad-performance @Armor-test/team-core
+
+# Directory ownership
+/api/ @Armor-test/squad-research @Armor-test/grp-api
+/shared/ @Armor-test/dept-security @Armor-test/squad-qa
+/controllers/ @Armor-test/team-security @Armor-test/squad-mobile
+/data/ @Armor-test/grp-reporting @Armor-test/dept-reporting @Armor-test/squad-qa
+/tests/ @Armor-test/squad-reporting @Armor-test/grp-payments @Armor-test/squad-cache
+/docs/ @Armor-test/dept-logging @Armor-test/grp-storage @Armor-test/unit-cloud
+/build/ @Armor-test/dept-identity @Armor-test/squad-ux @Armor-test/squad-ml
+/pkg/ @Armor-test/dept-notifications @Armor-test/squad-cache
+/ui/ @Armor-test/grp-api @Armor-test/unit-devops
+/vendor/ @Armor-test/squad-database @Armor-test/grp-search @Armor-test/grp-api
+/middleware/ @Armor-test/squad-cache @Armor-test/team-frontend
+
+# File type ownership
+*.cpp @Armor-test/squad-search @Armor-test/squad-apps
+*.sql @Armor-test/team-security @Armor-test/unit-devops @Armor-test/dept-test
+*.rs @Armor-test/squad-mobile @Armor-test/squad-ml
+*.json @Armor-test/grp-storage @Armor-test/unit-design @Armor-test/dept-test
+*.rb @Armor-test/squad-payments @Armor-test/team-core @Armor-test/grp-integration
+*.ts @Armor-test/squad-mobile @Armor-test/unit-design @Armor-test/grp-api
+*.jsx @Armor-test/dept-data @Armor-test/dept-notifications
+*.tsx @Armor-test/squad-performance @Armor-test/team-reporting @Armor-test/squad-qa
+*.proto @Armor-test/dept-security @Armor-test/team-reporting
+*.graphql @Armor-test/team-logging @Armor-test/squad-frontend @Armor-test/team-research
+*.xml @Armor-test/squad-product @Armor-test/dept-security @Armor-test/squad-ux
+*.properties @Armor-test/dept-ui @Armor-test/squad-ux
+*.yml @Armor-test/dept-billing @Armor-test/squad-frontend @Armor-test/unit-governance
+*.java @Armor-test/squad-product @Armor-test/team-logging
+*.ini @Armor-test/unit-governance @Armor-test/squad-cache
+
+# Security and special files
+/src/**/security/ @Armor-test/security @Armor-test/compliance
+.github/workflows/ @Armor-test/ci-team @Armor-test/devops
+/src/**/auth/ @Armor-test/security @Armor-test/auth-team
+Dockerfile @Armor-test/devops @Armor-test/infra
+Jenkinsfile @Armor-test/ci-team @Armor-test/devops
